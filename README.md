@@ -4,7 +4,7 @@ Enriches the [Arena.ai](https://arena.ai/leaderboard/text?license=open-source) o
 
 Most LLM leaderboards rank models by quality but ignore deployment constraints. This tool answers: *"What's the best model I can actually run on my hardware?"* by cross-referencing Arena rankings with VRAM requirements across precisions.
 
-> **Last updated:** 2026-07-08 08:16 UTC | **Models:** 209 | **Resolved:** 162 (77.5%)
+> **Last updated:** 2026-07-09 09:28 UTC | **Models:** 209 | **Resolved:** 162 (77.5%)
 
 > **Warning:** AA data may be stale (RSC fetch failed, using cached data).
 
@@ -248,7 +248,7 @@ Highest-ranked Arena model that fits on each single GPU (includes 25% serving ov
 | 195 | qwen1.5-4b-chat | 1089 | 4 | Dense | 10 | 5 | 2.5 | H100 SXM (FP8) |
 | 196 | olmo-7b-instruct | 1073 | 7 | Dense | 17.5 | 8.8 | 4.4 | H100 SXM (FP8) |
 | 197 | koala-13b | 1069 | 13 | Dense | 32.5 | 16.2 | 8.1 | H100 SXM (FP8) |
-| 198 | alpaca-13b | 1068 | 13 | Dense | 32.5 | 16.2 | 8.1 | H100 SXM (FP8) |
+| 198 | alpaca-13b | 1067 | 13 | Dense | 32.5 | 16.2 | 8.1 | H100 SXM (FP8) |
 | 199 | gpt4all-13b-snoozy | 1065 | 13 | Dense | 32.5 | 16.2 | 8.1 | H100 SXM (FP8) |
 | 200 | mpt-7b-chat | 1061 | 7 | Dense | 17.5 | 8.8 | 4.4 | H100 SXM (FP8) |
 | 201 | chatglm3-6b | 1055 | 6 | Dense | 15 | 7.5 | 3.8 | H100 SXM (FP8) |
