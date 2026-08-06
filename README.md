@@ -4,7 +4,7 @@ Enriches the [Arena.ai](https://arena.ai/leaderboard/text?license=open-source) o
 
 Most LLM leaderboards rank models by quality but ignore deployment constraints. This tool answers: *"What's the best model I can actually run on my hardware?"* by cross-referencing Arena rankings with VRAM requirements across precisions.
 
-> **Last updated:** 2026-08-05 08:26 UTC | **Models:** 213 | **Resolved:** 165 (77.5%)
+> **Last updated:** 2026-08-06 08:24 UTC | **Models:** 212 | **Resolved:** 164 (77.4%)
 
 > **Warning:** AA data may be stale (RSC fetch failed, using cached data).
 
@@ -97,7 +97,7 @@ Highest-ranked Arena model that fits on each single GPU (includes 25% serving ov
 | 49 | deepseek-v3-0324 | 1395 | 671 (37) | MoE | 1677.5 | 838.8 | 419.4 | Multi-GPU |
 | 50 | qwen3.5-35b-a3b | 1395 | 35 (3) | MoE | 87.5 | 43.8 | 21.9 | H100 SXM (FP8) |
 
-<details><summary>Show remaining 163 models</summary>
+<details><summary>Show remaining 162 models</summary>
 
 | Rank | Model | Score | Params (B) | Arch | VRAM BF16 | VRAM FP8 | VRAM INT4 | Fits on |
 |------|-------|-------|------------|------|-----------|----------|-----------|---------|
@@ -263,7 +263,6 @@ Highest-ranked Arena model that fits on each single GPU (includes 25% serving ov
 | 210 | dolly-v2-12b | 981 | 12 | Dense | 30 | 15 | 7.5 | H100 SXM (FP8) |
 | 211 | llama-13b | 973 | 13 | Dense | 32.5 | 16.2 | 8.1 | H100 SXM (FP8) |
 | 212 | stablelm-tuned-alpha-7b | 952 | 7 | Dense | 17.5 | 8.8 | 4.4 | H100 SXM (FP8) |
-| 213 | inkling-small | 1430 | 266 (12) | MoE | 665 | 332.5 | 166.2 | Multi-GPU |
 
 </details>
 
