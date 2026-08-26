@@ -4,7 +4,7 @@ Enriches the [Arena.ai](https://arena.ai/leaderboard/text?license=open-source) o
 
 Most LLM leaderboards rank models by quality but ignore deployment constraints. This tool answers: *"What's the best model I can actually run on my hardware?"* by cross-referencing Arena rankings with VRAM requirements across precisions.
 
-> **Last updated:** 2026-08-25 06:36 UTC | **Models:** 218 | **Resolved:** 168 (77.1%)
+> **Last updated:** 2026-08-26 06:38 UTC | **Models:** 218 | **Resolved:** 168 (77.1%)
 
 > **Warning:** AA data may be stale (RSC fetch failed, using cached data).
 
@@ -16,31 +16,31 @@ Highest-ranked Arena model that fits on each single GPU (includes 25% serving ov
 
 | GPU | VRAM | Best Model | Arena Rank | Params | Arch | Serving VRAM |
 |-----|------|------------|------------|--------|------|--------------|
-| H100 SXM | 80 GB | gemma-4-31b | #12 | 31B | Dense | 77.5 GB |
-| RTX PRO 6000 | 96 GB | gemma-4-31b | #12 | 31B | Dense | 77.5 GB |
-| H200 SXM | 141 GB | gemma-4-31b | #12 | 31B | Dense | 77.5 GB |
-| B200 SXM | 180 GB | gemma-4-31b | #12 | 31B | Dense | 77.5 GB |
-| B300 SXM | 288 GB | gemma-4-31b | #12 | 31B | Dense | 77.5 GB |
+| H100 SXM | 80 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 4.0 GB |
+| RTX PRO 6000 | 96 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 4.0 GB |
+| H200 SXM | 141 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 4.0 GB |
+| B200 SXM | 180 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 4.0 GB |
+| B300 SXM | 288 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 4.0 GB |
 
 ### FP8 (8-bit)
 
 | GPU | VRAM | Best Model | Arena Rank | Params | Arch | Serving VRAM |
 |-----|------|------------|------------|--------|------|--------------|
-| H100 SXM | 80 GB | gemma-4-31b | #12 | 31B | Dense | 38.8 GB |
-| RTX PRO 6000 | 96 GB | gemma-4-31b | #12 | 31B | Dense | 38.8 GB |
-| H200 SXM | 141 GB | gemma-4-31b | #12 | 31B | Dense | 38.8 GB |
-| B200 SXM | 180 GB | gemma-4-31b | #12 | 31B | Dense | 38.8 GB |
-| B300 SXM | 288 GB | gemma-4-31b | #12 | 31B | Dense | 38.8 GB |
+| H100 SXM | 80 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 2.0 GB |
+| RTX PRO 6000 | 96 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 2.0 GB |
+| H200 SXM | 141 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 2.0 GB |
+| B200 SXM | 180 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 2.0 GB |
+| B300 SXM | 288 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 2.0 GB |
 
 ### INT4 (4-bit)
 
 | GPU | VRAM | Best Model | Arena Rank | Params | Arch | Serving VRAM |
 |-----|------|------------|------------|--------|------|--------------|
-| H100 SXM | 80 GB | gemma-4-31b | #12 | 31B | Dense | 19.4 GB |
-| RTX PRO 6000 | 96 GB | gemma-4-31b | #12 | 31B | Dense | 19.4 GB |
-| H200 SXM | 141 GB | gemma-4-31b | #12 | 31B | Dense | 19.4 GB |
-| B200 SXM | 180 GB | gemma-4-31b | #12 | 31B | Dense | 19.4 GB |
-| B300 SXM | 288 GB | hy3 | #10 | 299B | MoE | 186.9 GB |
+| H100 SXM | 80 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 1.0 GB |
+| RTX PRO 6000 | 96 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 1.0 GB |
+| H200 SXM | 141 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 1.0 GB |
+| B200 SXM | 180 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 1.0 GB |
+| B300 SXM | 288 GB | deepseek-v4-pro | #8 | 1.6B | Dense | 1.0 GB |
 
 ## Full Leaderboard
 
@@ -53,7 +53,7 @@ Highest-ranked Arena model that fits on each single GPU (includes 25% serving ov
 | 5 | mimo-v2.5-pro | 1467 | ? | ? | ? | ? | ? | ? |
 | 6 | kimi-k2.6 | 1460 | 1000 (32) | MoE | 2500 | 1250 | 625 | Multi-GPU |
 | 7 | deepseek-v4-pro-high-20260813 | 1459 | ? | ? | ? | ? | ? | ? |
-| 8 | deepseek-v4-pro | 1457 | 1600 (49) | MoE | 4000 | 2000 | 1000 | Multi-GPU |
+| 8 | deepseek-v4-pro | 1457 | 1.6 (49) | Dense | 4 | 2 | 1 | H100 SXM (FP8) |
 | 9 | glm-5 | 1456 | 744 (40) | MoE | 1860 | 930 | 465 | Multi-GPU |
 | 10 | hy3 | 1456 | 299 (21) | MoE | 747.5 | 373.8 | 186.9 | Multi-GPU |
 | 11 | deepseek-v4-pro-high-preview | 1455 | ? | ? | ? | ? | ? | ? |
